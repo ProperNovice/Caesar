@@ -1,4 +1,4 @@
-package model;
+package business;
 
 import enums.ELayerZ;
 import managers.Credentials;
@@ -12,9 +12,13 @@ public enum Map implements IImageViewAble, IMouseEventAble {
 
 	private Map() {
 
+		createMap();
+
+	}
+
+	private void createMap() {
 		new ImageView("map.png", ELayerZ.MAP, this);
 		getImageView().relocateTopLeft(Credentials.INSTANCE.cMap);
-
 	}
 
 }

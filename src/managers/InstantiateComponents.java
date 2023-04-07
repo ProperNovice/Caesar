@@ -1,6 +1,6 @@
 package managers;
 
-import model.Map;
+import business.Map;
 
 public enum InstantiateComponents {
 
@@ -9,6 +9,7 @@ public enum InstantiateComponents {
 	private InstantiateComponents() {
 
 		Map.values();
+		TokenProvinceBonusManager.values();
 
 	}
 
