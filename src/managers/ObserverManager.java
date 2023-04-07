@@ -42,7 +42,7 @@ public enum ObserverManager {
 
 		// is max/over capacity
 
-		for (ListImageViewAbles<IImageViewAble> list : Lists.INSTANCE.lists) {
+		for (ListImageViewAbles<IImageViewAble> list : ListsManager.INSTANCE.lists) {
 
 			if (list.getArrayList().isMaxCapacity())
 				fireEventListIsMaxCapacity(list);

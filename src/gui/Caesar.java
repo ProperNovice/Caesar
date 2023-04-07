@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import managers.Credentials;
 import managers.InstantiateComponents;
-import managers.Lists;
+import managers.ListsManager;
 import managers.Observers;
 import utils.Animation;
 import utils.Flow;
@@ -29,7 +29,7 @@ public class Caesar extends Application {
 
 	private void start() {
 
-		Lists.INSTANCE.instantiate();
+		ListsManager.INSTANCE.instantiate();
 		Text.values();
 		Observers.values();
 

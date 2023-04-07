@@ -4,7 +4,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Iterator;
 
 import listCredentials.ListCredentials;
-import managers.Lists;
+import managers.ListsManager;
 import utils.Enums.AnimationSynchEnum;
 import utils.Enums.ImageViewActionEnum;
 import utils.Enums.RearrangeTypeEnum;
@@ -29,7 +29,7 @@ public class ListImageViewAbles<T> implements Iterable<T> {
 				() -> showListSize());
 		this.arrayList.setCapacity(capacity);
 
-		Lists.INSTANCE.lists.addLast((ListImageViewAbles<IImageViewAble>) this);
+		ListsManager.INSTANCE.lists.addLast((ListImageViewAbles<IImageViewAble>) this);
 
 		try {
 			this.listCredentials = classListCredentials.getConstructor().newInstance();

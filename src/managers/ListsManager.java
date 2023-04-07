@@ -4,7 +4,7 @@ import utils.ArrayList;
 import utils.Interfaces.IImageViewAble;
 import utils.ListImageViewAbles;
 
-public enum Lists {
+public enum ListsManager {
 
 	INSTANCE;
 
