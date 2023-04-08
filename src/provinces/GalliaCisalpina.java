@@ -6,7 +6,7 @@ public class GalliaCisalpina extends Province {
 
 	@Override
 	protected Vector2 getCoordinatesTopLeftPrimary() {
-		return new Vector2(829, 440);
+		return new Vector2(866, 477);
 	}
 
 }

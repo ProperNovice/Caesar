@@ -6,7 +6,7 @@ public class Numidia extends Province {
 
 	@Override
 	protected Vector2 getCoordinatesTopLeftPrimary() {
-		return new Vector2(298, 465);
+		return new Vector2(335, 502);
 	}
 
 }

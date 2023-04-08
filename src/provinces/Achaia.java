@@ -6,7 +6,7 @@ public class Achaia extends Province {
 
 	@Override
 	protected Vector2 getCoordinatesTopLeftPrimary() {
-		return new Vector2(434, 766);
+		return new Vector2(471, 803);
 	}
 
 }

@@ -6,7 +6,7 @@ public class Sardinia extends Province {
 
 	@Override
 	protected Vector2 getCoordinatesTopLeftPrimary() {
-		return new Vector2(534, 352);
+		return new Vector2(571, 389);
 	}
 
 }

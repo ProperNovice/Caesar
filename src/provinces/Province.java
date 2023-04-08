@@ -33,10 +33,10 @@ public abstract class Province {
 
 		// set up secondary token
 
-		if (getSecondaryToken() == null)
-			return;
-
 		tokenProvinceBonus = getSecondaryToken();
+
+		if (tokenProvinceBonus == null)
+			return;
 
 		tokenProvinceBonus.getImageView()
 				.relocateCenter(this.listCoordinatesCenterTokens.getLast());
@@ -51,9 +51,6 @@ public abstract class Province {
 			return;
 
 		vector2 = vector2.addVector2(Credentials.INSTANCE.cMap.clone());
-
-		double pixelsToAdd = Credentials.INSTANCE.dToken / 2;
-		vector2 = vector2.addX(pixelsToAdd).addY(pixelsToAdd);
 
 		this.listCoordinatesCenterTokens.addLast(vector2);
 

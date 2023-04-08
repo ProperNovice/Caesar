@@ -6,7 +6,7 @@ public class Aegyptus extends Province {
 
 	@Override
 	protected Vector2 getCoordinatesTopLeftPrimary() {
-		return new Vector2(82, 1027);
+		return new Vector2(119, 1064);
 	}
 
 }

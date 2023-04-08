@@ -6,7 +6,7 @@ public class HispaniaCiterior extends Province {
 
 	@Override
 	protected Vector2 getCoordinatesTopLeftPrimary() {
-		return new Vector2(598, 101);
+		return new Vector2(635, 138);
 	}
 
 }

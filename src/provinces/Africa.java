@@ -6,7 +6,7 @@ public class Africa extends Province {
 
 	@Override
 	protected Vector2 getCoordinatesTopLeftPrimary() {
-		return new Vector2(89, 618);
+		return new Vector2(126, 655);
 	}
 
 }

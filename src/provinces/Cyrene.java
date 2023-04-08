@@ -6,7 +6,7 @@ public class Cyrene extends Province {
 
 	@Override
 	protected Vector2 getCoordinatesTopLeftPrimary() {
-		return new Vector2(73, 814);
+		return new Vector2(110, 851);
 	}
 
 }

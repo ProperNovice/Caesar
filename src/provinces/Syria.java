@@ -6,7 +6,7 @@ public class Syria extends Province {
 
 	@Override
 	protected Vector2 getCoordinatesTopLeftPrimary() {
-		return new Vector2(233, 1202);
+		return new Vector2(270, 1239);
 	}
 
 }

@@ -9,12 +9,12 @@ public class Italia extends Province {
 
 	@Override
 	protected Vector2 getCoordinatesTopLeftPrimary() {
-		return new Vector2(532, 602);
+		return new Vector2(569, 639);
 	}
 
 	@Override
 	protected Vector2 getCoordinatesTopLeftSecondary() {
-		return new Vector2(596, 552);
+		return new Vector2(635, 589);
 	}
 
 	@Override
