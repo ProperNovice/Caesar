@@ -8,13 +8,13 @@ import utils.Vector2;
 public class Italia extends Province {
 
 	@Override
-	protected Vector2 getCoordinatesTopLeftPrimary() {
+	protected Vector2 getCoordinatesCenterPrimary() {
 		return new Vector2(569, 639);
 	}
 
 	@Override
-	protected Vector2 getCoordinatesTopLeftSecondary() {
-		return new Vector2(635, 589);
+	protected Vector2 getCoordinatesCenterSecondary() {
+		return new Vector2(632, 589);
 	}
 
 	@Override

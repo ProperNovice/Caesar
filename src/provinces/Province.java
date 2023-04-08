@@ -13,8 +13,8 @@ public abstract class Province {
 
 	public Province() {
 
-		addTokenProvinceCoordinates(getCoordinatesTopLeftPrimary());
-		addTokenProvinceCoordinates(getCoordinatesTopLeftSecondary());
+		addTokenProvinceCoordinates(getCoordinatesCenterPrimary());
+		addTokenProvinceCoordinates(getCoordinatesCenterSecondary());
 
 	}
 
@@ -56,7 +56,7 @@ public abstract class Province {
 
 	}
 
-	protected abstract Vector2 getCoordinatesTopLeftPrimary();
+	protected abstract Vector2 getCoordinatesCenterPrimary();
 
 	protected TokenProvinceBonus getPrimaryToken() {
 		return TokenProvinceBonusManager.INSTANCE.getRandomToken();
@@ -66,7 +66,7 @@ public abstract class Province {
 		return null;
 	}
 
-	protected Vector2 getCoordinatesTopLeftSecondary() {
+	protected Vector2 getCoordinatesCenterSecondary() {
 		return null;
 	}
 
