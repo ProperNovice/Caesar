@@ -6,7 +6,7 @@ public class Sicilia extends Province {
 
 	@Override
 	protected Vector2 getCoordinatesCenterPrimary() {
-		return new Vector2(455, 592);
+		return new Vector2(456, 592);
 	}
 
 }
