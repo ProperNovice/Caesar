@@ -10,7 +10,7 @@ import utils.Interfaces.IImageViewAble;
 public abstract class TokenInfluence implements IImageViewAble {
 
 	private int topValue, bottomValue;
-	protected ArrayList<Class<? extends TokenInfluence>> listTypes = new ArrayList<>();
+	protected ArrayList<Class<? extends TokenInfluence>> iconTypes = new ArrayList<>();
 
 	public TokenInfluence(EColor eColor, int topValue, int bottomValue) {
 

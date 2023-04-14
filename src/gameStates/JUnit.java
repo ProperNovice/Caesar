@@ -3,7 +3,9 @@ package gameStates;
 import enums.EColor;
 import gameStatesDefault.GameState;
 import managers.ProvinceManager;
+import tokenInfluence.Centurion;
 import tokenInfluence.Shield;
+import tokenInfluence.Ship;
 
 public class JUnit extends GameState {
 
@@ -11,8 +13,7 @@ public class JUnit extends GameState {
 	public void execute() {
 
 		ProvinceManager.INSTANCE.setUpStartingTokenProvinceBonus();
-
-		new Shield(EColor.BLUE, 2, 4);
+		new Centurion(EColor.BLUE, 4, 4, Shield.class, Ship.class);
 
 	}
 
