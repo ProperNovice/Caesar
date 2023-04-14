@@ -3,9 +3,9 @@ package tokenInfluence;
 import enums.EColor;
 import enums.EInfluenceTokenType;
 
-public class TokenInfluenceShield extends TokenInfluenceNormal {
+public class Shield extends TokenInfluenceNormal {
 
-	public TokenInfluenceShield(EColor eColor, int topValue, int bottomValue) {
+	public Shield(EColor eColor, int topValue, int bottomValue) {
 		super(eColor, topValue, bottomValue);
 	}
 

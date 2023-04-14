@@ -3,7 +3,7 @@ package gameStates;
 import enums.EColor;
 import gameStatesDefault.GameState;
 import managers.ProvinceManager;
-import tokenInfluence.TokenInfluenceShield;
+import tokenInfluence.Shield;
 
 public class JUnit extends GameState {
 
@@ -12,7 +12,7 @@ public class JUnit extends GameState {
 
 		ProvinceManager.INSTANCE.setUpStartingTokenProvinceBonus();
 
-		new TokenInfluenceShield(EColor.BLUE, 2, 4);
+		new Shield(EColor.BLUE, 2, 4);
 
 	}
 

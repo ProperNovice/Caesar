@@ -3,9 +3,9 @@ package tokenInfluence;
 import enums.EColor;
 import enums.EInfluenceTokenType;
 
-public class TokenInfluenceShip extends TokenInfluenceNormal {
+public class Ship extends TokenInfluenceNormal {
 
-	public TokenInfluenceShip(EColor eColor, int topValue, int bottomValue) {
+	public Ship(EColor eColor, int topValue, int bottomValue) {
 		super(eColor, topValue, bottomValue);
 	}
 

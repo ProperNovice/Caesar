@@ -16,13 +16,13 @@ public abstract class TokenInfluence implements IImageViewAble {
 		this.topValue = topValue;
 		this.bottomValue = bottomValue;
 
-		createColor(eColor);
+		createToken(eColor);
 
 	}
 
 	protected abstract EInfluenceTokenType getInfluenceTokenType();
 
-	private void createColor(EColor eColor) {
+	private void createToken(EColor eColor) {
 
 		String filePath = "";
 		filePath += "influence/";
