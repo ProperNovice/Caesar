@@ -25,6 +25,8 @@ public enum ControlMarkerManager {
 			for (int counter = 1; counter <= 12; counter++)
 				list.addLast(new ControlMarker(eColor));
 
+			list.saveOriginal();
+
 		}
 
 	}

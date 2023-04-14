@@ -31,10 +31,10 @@ public enum ProvinceManager {
 		createProvinces();
 	}
 
-	public void setUpStartingTokenProvinceBonus() {
+	public void setUpStartingTokenProvince() {
 
 		for (Province province : this.list)
-			province.setUpTokenProvinceBonus();
+			province.setUpTokenProvince();
 
 	}
 

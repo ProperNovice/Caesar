@@ -15,7 +15,8 @@ public enum Credentials {
 	public Vector2 cTextPanel, cImageViewIndicator;
 	public RearrangeTypeEnum rearrangeTypeEnumText = RearrangeTypeEnum.LINEAR;
 
-	public Vector2 cMap;
+	public Vector2 cMap, cControlTokensTopPlayer, cControlTokensBottomPlayer;
+	public Vector2 dGapBetweenControlMarkers;
 	public double dToken;
 
 	private Credentials() {
@@ -44,6 +45,28 @@ public enum Credentials {
 		// d token
 
 		this.dToken = 76;
+
+		// c control token top player
+
+		x = this.cMap.x;
+		x += 84;
+		y = this.cMap.y;
+		y += 82;
+		this.cControlTokensTopPlayer = new Vector2(x, y);
+
+		// c control token bottom player
+
+		x = this.cMap.x;
+		x += 911;
+		y = this.cMap.y;
+		y += 1233;
+		this.cControlTokensBottomPlayer = new Vector2(x, y);
+
+		// c gap between control markers
+
+		x = 78;
+		y = 78;
+		this.dGapBetweenControlMarkers = new Vector2(x, y);
 
 	}
 

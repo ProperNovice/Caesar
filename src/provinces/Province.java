@@ -18,7 +18,7 @@ public abstract class Province {
 
 	}
 
-	public void setUpTokenProvinceBonus() {
+	public void setUpTokenProvince() {
 
 		TokenProvince tokenProvinceBonus = null;
 

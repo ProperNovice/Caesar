@@ -8,7 +8,7 @@ public class JUnit extends GameState {
 	@Override
 	public void execute() {
 
-		ProvinceManager.INSTANCE.setUpStartingTokenProvinceBonus();
+		ProvinceManager.INSTANCE.setUpStartingTokenProvince();
 
 	}
 
