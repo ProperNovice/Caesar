@@ -53,7 +53,7 @@ public class Interfaces {
 
 	}
 
-	public interface IImageViewAble {
+	public interface IImageViewAble extends IMouseEventAble {
 
 		public default ImageView getImageView() {
 			return MapImageViews.INSTANCE.getImageViewsMap().getValue(this);
