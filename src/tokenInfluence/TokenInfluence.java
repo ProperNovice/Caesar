@@ -35,6 +35,7 @@ public abstract class TokenInfluence implements IImageViewAble {
 
 		new ImageView(filePath, ELayerZ.TOKENS, this);
 		getImageView().setWidth(Credentials.INSTANCE.dToken);
+		getImageView().setVisible(false);
 
 	}
 

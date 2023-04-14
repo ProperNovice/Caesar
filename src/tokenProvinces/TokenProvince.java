@@ -1,4 +1,4 @@
-package tokenProvincesBonus;
+package tokenProvinces;
 
 import enums.ELayerZ;
 import managers.Credentials;

@@ -2,7 +2,7 @@ package provinces;
 
 import managers.Credentials;
 import managers.TokenProvinceManager;
-import tokenProvincesBonus.TokenProvince;
+import tokenProvinces.TokenProvince;
 import utils.ArrayList;
 import utils.Vector2;
 

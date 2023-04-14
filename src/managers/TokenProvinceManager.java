@@ -2,13 +2,13 @@ package managers;
 
 import java.lang.reflect.InvocationTargetException;
 
-import tokenProvincesBonus.Centurion;
-import tokenProvincesBonus.Might;
-import tokenProvincesBonus.Poison;
-import tokenProvincesBonus.Senate;
-import tokenProvincesBonus.Tactics;
-import tokenProvincesBonus.TokenProvince;
-import tokenProvincesBonus.Wealth;
+import tokenProvinces.Centurion;
+import tokenProvinces.Might;
+import tokenProvinces.Poison;
+import tokenProvinces.Senate;
+import tokenProvinces.Tactics;
+import tokenProvinces.TokenProvince;
+import tokenProvinces.Wealth;
 import utils.ArrayList;
 
 public enum TokenProvinceManager {

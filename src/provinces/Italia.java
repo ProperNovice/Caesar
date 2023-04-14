@@ -1,8 +1,8 @@
 package provinces;
 
 import managers.TokenProvinceManager;
-import tokenProvincesBonus.Senate;
-import tokenProvincesBonus.TokenProvince;
+import tokenProvinces.Senate;
+import tokenProvinces.TokenProvince;
 import utils.Vector2;
 
 public class Italia extends Province {
