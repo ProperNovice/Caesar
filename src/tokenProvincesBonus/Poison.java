@@ -1,5 +1,5 @@
 package tokenProvincesBonus;
 
-public class Poison extends TokenProvinceBonus {
+public class Poison extends TokenProvince {
 
 }

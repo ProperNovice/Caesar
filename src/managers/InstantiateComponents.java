@@ -9,7 +9,7 @@ public enum InstantiateComponents {
 	private InstantiateComponents() {
 
 		Map.values();
-		TokenProvinceBonusManager.values();
+		TokenProvinceManager.values();
 
 	}
 

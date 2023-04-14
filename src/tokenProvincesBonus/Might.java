@@ -1,5 +1,5 @@
 package tokenProvincesBonus;
 
-public class Might extends TokenProvinceBonus {
+public class Might extends TokenProvince {
 
 }

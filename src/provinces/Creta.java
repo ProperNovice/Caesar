@@ -6,7 +6,7 @@ public class Creta extends Province {
 
 	@Override
 	protected Vector2 getCoordinatesCenterPrimary() {
-		return new Vector2(391, 908);
+		return new Vector2(389, 908);
 	}
 
 }

@@ -31,6 +31,13 @@ public enum ProvinceManager {
 		createProvinces();
 	}
 
+	public void setUpStartingTokenProvinceBonus() {
+
+		for (Province province : this.list)
+			province.setUpTokenProvinceBonus();
+
+	}
+
 	private void createProvinces() {
 
 		this.list.addLast(new Italia());
@@ -54,10 +61,6 @@ public enum ProvinceManager {
 
 		this.list.saveOriginal();
 
-	}
-
-	public ArrayList<Province> getProvinces() {
-		return this.list;
 	}
 
 }

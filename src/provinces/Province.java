@@ -1,15 +1,15 @@
 package provinces;
 
 import managers.Credentials;
-import managers.TokenProvinceBonusManager;
-import tokenProvincesBonus.TokenProvinceBonus;
+import managers.TokenProvinceManager;
+import tokenProvincesBonus.TokenProvince;
 import utils.ArrayList;
 import utils.Vector2;
 
 public abstract class Province {
 
 	private ArrayList<Vector2> listCoordinatesCenterTokens = new ArrayList<>();
-	private ArrayList<TokenProvinceBonus> listTokenProvinceBonus = new ArrayList<>();
+	private ArrayList<TokenProvince> listTokenProvinceBonus = new ArrayList<>();
 
 	public Province() {
 
@@ -20,7 +20,7 @@ public abstract class Province {
 
 	public void setUpTokenProvinceBonus() {
 
-		TokenProvinceBonus tokenProvinceBonus = null;
+		TokenProvince tokenProvinceBonus = null;
 
 		// set up primary token
 
@@ -58,11 +58,11 @@ public abstract class Province {
 
 	protected abstract Vector2 getCoordinatesCenterPrimary();
 
-	protected TokenProvinceBonus getPrimaryToken() {
-		return TokenProvinceBonusManager.INSTANCE.getRandomToken();
+	protected TokenProvince getPrimaryToken() {
+		return TokenProvinceManager.INSTANCE.getRandomToken();
 	}
 
-	protected TokenProvinceBonus getSecondaryToken() {
+	protected TokenProvince getSecondaryToken() {
 		return null;
 	}
 

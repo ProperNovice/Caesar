@@ -1,12 +1,13 @@
 package tokenProvincesBonus;
 
 import enums.ELayerZ;
+import managers.Credentials;
 import utils.ImageView;
 import utils.Interfaces.IImageViewAble;
 
-public abstract class TokenProvinceBonus implements IImageViewAble {
+public abstract class TokenProvince implements IImageViewAble {
 
-	public TokenProvinceBonus() {
+	public TokenProvince() {
 
 		String fileName = "";
 		fileName += "province/";
@@ -14,6 +15,7 @@ public abstract class TokenProvinceBonus implements IImageViewAble {
 		fileName += ".png";
 
 		new ImageView(fileName, ELayerZ.TOKENS, this);
+		getImageView().setWidth(Credentials.INSTANCE.dToken);
 		getImageView().setVisible(false);
 
 	}

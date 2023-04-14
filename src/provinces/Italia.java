@@ -1,8 +1,8 @@
 package provinces;
 
-import managers.TokenProvinceBonusManager;
+import managers.TokenProvinceManager;
 import tokenProvincesBonus.Senate;
-import tokenProvincesBonus.TokenProvinceBonus;
+import tokenProvincesBonus.TokenProvince;
 import utils.Vector2;
 
 public class Italia extends Province {
@@ -18,8 +18,8 @@ public class Italia extends Province {
 	}
 
 	@Override
-	protected TokenProvinceBonus getSecondaryToken() {
-		return TokenProvinceBonusManager.INSTANCE.getSpecificToken(Senate.class);
+	protected TokenProvince getSecondaryToken() {
+		return TokenProvinceManager.INSTANCE.getSpecificToken(Senate.class);
 	}
 
 }

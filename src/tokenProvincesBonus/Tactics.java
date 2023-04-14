@@ -1,5 +1,5 @@
 package tokenProvincesBonus;
 
-public class Tactics extends TokenProvinceBonus {
+public class Tactics extends TokenProvince {
 
 }

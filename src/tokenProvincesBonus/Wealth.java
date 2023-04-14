@@ -1,5 +1,5 @@
 package tokenProvincesBonus;
 
-public class Wealth extends TokenProvinceBonus {
+public class Wealth extends TokenProvince {
 
 }

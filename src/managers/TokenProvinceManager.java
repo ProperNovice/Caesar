@@ -7,29 +7,29 @@ import tokenProvincesBonus.Might;
 import tokenProvincesBonus.Poison;
 import tokenProvincesBonus.Senate;
 import tokenProvincesBonus.Tactics;
-import tokenProvincesBonus.TokenProvinceBonus;
+import tokenProvincesBonus.TokenProvince;
 import tokenProvincesBonus.Wealth;
 import utils.ArrayList;
 
-public enum TokenProvinceBonusManager {
+public enum TokenProvinceManager {
 
 	INSTANCE;
 
-	private ArrayList<TokenProvinceBonus> list = new ArrayList<>();
+	private ArrayList<TokenProvince> list = new ArrayList<>();
 
-	private TokenProvinceBonusManager() {
+	private TokenProvinceManager() {
 		createTokens();
 	}
 
-	public TokenProvinceBonus getRandomToken() {
+	public TokenProvince getRandomToken() {
 		return this.list.removeRandom();
 	}
 
-	public TokenProvinceBonus getSpecificToken(Class<? extends TokenProvinceBonus> classToken) {
+	public TokenProvince getSpecificToken(Class<? extends TokenProvince> classToken) {
 
-		TokenProvinceBonus tokenProvinceBonus = null;
+		TokenProvince tokenProvinceBonus = null;
 
-		for (TokenProvinceBonus tokenProvinceBonusTemp : this.list)
+		for (TokenProvince tokenProvinceBonusTemp : this.list)
 			if (tokenProvinceBonusTemp.getClass().equals(classToken)) {
 
 				tokenProvinceBonus = tokenProvinceBonusTemp;
@@ -56,11 +56,11 @@ public enum TokenProvinceBonusManager {
 
 	}
 
-	private void addTokens(Class<? extends TokenProvinceBonus> classToken, int amount) {
+	private void addTokens(Class<? extends TokenProvince> classToken, int amount) {
 
 		for (int counter = 1; counter <= amount; counter++) {
 
-			TokenProvinceBonus tokenProvinceBonus = null;
+			TokenProvince tokenProvinceBonus = null;
 
 			try {
 				tokenProvinceBonus = classToken.getConstructor().newInstance();

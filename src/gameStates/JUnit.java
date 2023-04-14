@@ -1,14 +1,18 @@
 package gameStates;
 
+import enums.EColor;
 import gameStatesDefault.GameState;
-import managers.Model;
+import managers.ProvinceManager;
+import tokenInfluence.TokenInfluenceShield;
 
 public class JUnit extends GameState {
 
 	@Override
 	public void execute() {
 
-		Model.INSTANCE.setUpStartingTokenProvinceBonus();
+		ProvinceManager.INSTANCE.setUpStartingTokenProvinceBonus();
+
+		new TokenInfluenceShield(EColor.BLUE, 2, 4);
 
 	}
 

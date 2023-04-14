@@ -1,5 +1,5 @@
 package tokenProvincesBonus;
 
-public class Centurion extends TokenProvinceBonus {
+public class Centurion extends TokenProvince {
 
 }
