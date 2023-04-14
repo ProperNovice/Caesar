@@ -1,15 +1,16 @@
 package tokenInfluence;
 
 import enums.EColor;
-import enums.EInfluenceTokenType;
 import enums.ELayerZ;
 import managers.Credentials;
+import utils.ArrayList;
 import utils.ImageView;
 import utils.Interfaces.IImageViewAble;
 
 public abstract class TokenInfluence implements IImageViewAble {
 
 	private int topValue, bottomValue;
+	protected ArrayList<Class<? extends TokenInfluence>> listTypes = new ArrayList<>();
 
 	public TokenInfluence(EColor eColor, int topValue, int bottomValue) {
 
@@ -20,15 +21,13 @@ public abstract class TokenInfluence implements IImageViewAble {
 
 	}
 
-	protected abstract EInfluenceTokenType getInfluenceTokenType();
-
 	private void createToken(EColor eColor) {
 
 		String filePath = "";
 		filePath += "influence/";
 		filePath += eColor.toString().toLowerCase();
 		filePath += "/";
-		filePath += getInfluenceTokenType().toString().toLowerCase();
+		filePath += this.getClass().getSimpleName().toLowerCase();
 		filePath += "/";
 		filePath += this.topValue;
 		filePath += this.bottomValue;

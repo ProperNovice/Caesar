@@ -10,6 +10,7 @@ public enum InstantiateComponents {
 
 		Map.values();
 		TokenProvinceManager.values();
+		TokenInfluenceManager.values();
 
 	}
 
