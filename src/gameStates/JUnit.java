@@ -1,6 +1,7 @@
 package gameStates;
 
 import gameStatesDefault.GameState;
+import managers.ControlMarkerManager;
 import managers.ProvinceManager;
 
 public class JUnit extends GameState {
@@ -9,6 +10,7 @@ public class JUnit extends GameState {
 	public void execute() {
 
 		ProvinceManager.INSTANCE.setUpStartingTokenProvince();
+		ControlMarkerManager.INSTANCE.setUpControlMarkers();
 
 	}
 

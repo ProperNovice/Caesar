@@ -31,4 +31,17 @@ public enum ControlMarkerManager {
 
 	}
 
+	public void setUpControlMarkers() {
+
+		ArrayList<EColor> list = new ArrayList<>(EColor.values());
+		list.shuffle();
+
+		ArrayList<ControlMarker> listControlMarkers = this.list.getValue(list.removeRandom());
+		PlayerManager.INSTANCE.getPlayerTop().addControlMarkersAndRelocate(listControlMarkers);
+
+		listControlMarkers = this.list.getValue(list.removeRandom());
+		PlayerManager.INSTANCE.getPlayerBottom().addControlMarkersAndRelocate(listControlMarkers);
+
+	}
+
 }

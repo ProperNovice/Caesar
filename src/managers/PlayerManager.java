@@ -17,4 +17,12 @@ public enum PlayerManager {
 
 	}
 
+	public Player getPlayerTop() {
+		return this.playerTop;
+	}
+
+	public Player getPlayerBottom() {
+		return this.playerBottom;
+	}
+
 }

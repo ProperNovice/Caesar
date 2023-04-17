@@ -16,7 +16,6 @@ public class ControlMarker implements IImageViewAble {
 
 		new ImageView(fileName + "control marker.png", ELayerZ.TOKENS, this);
 		getImageView().setBack(fileName + "back.png");
-		getImageView().setVisible(false);
 
 	}
 

@@ -57,16 +57,15 @@ public enum Credentials {
 		// c control token bottom player
 
 		x = this.cMap.x;
-		x += 911;
+		x += 909;
 		y = this.cMap.y;
-		y += 1233;
+		y += 1234;
 		this.cControlTokensBottomPlayer = new Vector2(x, y);
 
 		// c gap between control markers
 
-		x = 78;
-		y = 78;
-		this.dGapBetweenControlMarkers = new Vector2(x, y);
+		x = 76;
+		this.dGapBetweenControlMarkers = new Vector2(x, x);
 
 	}
 
