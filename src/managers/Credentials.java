@@ -64,8 +64,9 @@ public enum Credentials {
 
 		// c gap between control markers
 
-		x = 76;
-		this.dGapBetweenControlMarkers = new Vector2(x, x);
+		x = 78;
+		y = 76;
+		this.dGapBetweenControlMarkers = new Vector2(x, y);
 
 	}
 
