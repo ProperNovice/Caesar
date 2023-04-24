@@ -1,7 +1,10 @@
 package gameStatesDefault;
 
+import borders.Border;
 import enums.EText;
 import javafx.scene.input.KeyCode;
+import managers.BorderManager;
+import tokenInfluence.TokenInfluence;
 import utils.ArrayList;
 import utils.Flow;
 import utils.KeyCodeHandler;
@@ -51,6 +54,22 @@ public abstract class GameState {
 
 	protected final ArrayList<Class<? extends GameState>> getFlow() {
 		return Flow.INSTANCE.getFlow();
+	}
+
+	public final void handleTokenInfluencePressed(TokenInfluence tokenInfluence) {
+
+		for (Border border : BorderManager.INSTANCE.getList())
+			if (border.containsTokenInfluence(tokenInfluence))
+				handleTokenInfluencePressedInBorder(tokenInfluence);
+
+	}
+
+	protected void handleTokenInfluencePressedInBorder(TokenInfluence tokenInfluence) {
+
+	}
+
+	public void handleBorderPressed(Border border) {
+
 	}
 
 }

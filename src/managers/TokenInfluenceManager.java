@@ -6,6 +6,7 @@ import tokenInfluence.Laurel;
 import tokenInfluence.Shield;
 import tokenInfluence.Ship;
 import tokenInfluence.Sword;
+import tokenInfluence.TokenInfluence;
 import tokenInfluence.TokenInfluenceNormal;
 import utils.ArrayList;
 import utils.HashMap;
@@ -22,6 +23,10 @@ public enum TokenInfluenceManager {
 		createInfluenceTokensNormal();
 		createInfluenceTokensCenturion();
 
+	}
+
+	public TokenInfluence removeRandomTokenNormal(EColor eColor) {
+		return this.tokenInfluenceNormal.getValue(eColor).removeRandom();
 	}
 
 	private void createInfluenceTokensNormal() {

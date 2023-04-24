@@ -4,6 +4,7 @@ import enums.EColor;
 import enums.ELayerZ;
 import managers.Credentials;
 import utils.ArrayList;
+import utils.Flow;
 import utils.ImageView;
 import utils.Interfaces.IImageViewAble;
 
@@ -19,6 +20,11 @@ public abstract class TokenInfluence implements IImageViewAble {
 
 		createToken(eColor);
 
+	}
+
+	@Override
+	public void handleMousePressedPrimary() {
+		Flow.INSTANCE.getGameStateCurrent().handleTokenInfluencePressed(this);
 	}
 
 	private void createToken(EColor eColor) {
