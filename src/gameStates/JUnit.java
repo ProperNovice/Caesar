@@ -8,6 +8,7 @@ import managers.ControlMarkerManager;
 import managers.ProvinceManager;
 import managers.TokenInfluenceManager;
 import tokenInfluence.TokenInfluence;
+import utils.ArrayList;
 import utils.Lock;
 
 public class JUnit extends GameState {
@@ -30,7 +31,7 @@ public class JUnit extends GameState {
 		for (Border border : BorderManager.INSTANCE.getList()) {
 
 			TokenInfluence tokenInfluence = TokenInfluenceManager.INSTANCE
-					.removeRandomTokenNormal(EColor.BLUE);
+					.removeRandomTokenNormal(new ArrayList<EColor>(EColor.values()).getRandom());
 			tokenInfluence.getImageView().setVisible(true);
 
 			border.addTokenProvinceAnimateSynchronous(tokenInfluence);
@@ -46,7 +47,7 @@ public class JUnit extends GameState {
 
 		this.rotate += 20;
 		tokenInfluence.getImageView().setRotate(this.rotate);
-		
+
 		System.out.println(this.rotate);
 
 	}
