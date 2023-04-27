@@ -16,6 +16,8 @@ import provinces.HispaniaUlterior;
 import provinces.Macedonia;
 import provinces.Mauritania;
 import provinces.Numidia;
+import provinces.Sardinia;
+import provinces.Sicilia;
 import provinces.Syria;
 import tokenInfluence.Shield;
 import tokenInfluence.Ship;
@@ -97,11 +99,43 @@ public enum BorderManager {
 				.build());
 
 		this.list.addLast(new BorderBuilder().classProvinces(Asia.class, Aegyptus.class)
-				.classTokenInfluence(Ship.class).coordinatesCenter(368, 1038).rotateOriginal(100)
+				.classTokenInfluence(Ship.class).coordinatesCenter(368, 1040).rotateOriginal(100)
 				.build());
 
 		this.list.addLast(new BorderBuilder().classProvinces(Creta.class, Aegyptus.class)
 				.classTokenInfluence(Ship.class).coordinatesCenter(326, 959).rotateOriginal(10)
+				.build());
+
+		this.list.addLast(new BorderBuilder().classProvinces(Creta.class, Cyrene.class)
+				.classTokenInfluence(Shield.class).coordinatesCenter(296, 856).rotateOriginal(100)
+				.build());
+
+		this.list.addLast(new BorderBuilder().classProvinces(Achaia.class, Creta.class)
+				.classTokenInfluence(Shield.class).coordinatesCenter(380, 800).rotateOriginal(40)
+				.build());
+
+		this.list.addLast(new BorderBuilder().classProvinces(Africa.class, Achaia.class)
+				.classTokenInfluence(Ship.class).coordinatesCenter(369, 709).rotateOriginal(330)
+				.build());
+
+		this.list.addLast(new BorderBuilder().classProvinces(Sicilia.class, Africa.class)
+				.classTokenInfluence(Ship.class).coordinatesCenter(383, 621).rotateOriginal(40)
+				.build());
+
+		this.list.addLast(new BorderBuilder().classProvinces(Sicilia.class, Numidia.class)
+				.classTokenInfluence(Ship.class).coordinatesCenter(435, 493).rotateOriginal(140)
+				.build());
+
+		this.list.addLast(new BorderBuilder().classProvinces(Sardinia.class, Mauritania.class)
+				.classTokenInfluence(Ship.class).coordinatesCenter(492, 370).rotateOriginal(90)
+				.build());
+
+		this.list.addLast(new BorderBuilder().classProvinces(Sardinia.class, Sicilia.class)
+				.classTokenInfluence(Ship.class).coordinatesCenter(524, 471).rotateOriginal(40)
+				.build());
+		
+		this.list.addLast(new BorderBuilder().classProvinces(Gallia.class, Sardinia.class)
+				.classTokenInfluence(Shield.class).coordinatesCenter(666, 372).rotateOriginal(50)
 				.build());
 
 	}
