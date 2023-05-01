@@ -1,14 +1,12 @@
 package gameStates;
 
 import borders.Border;
-import enums.EColor;
 import gameStatesDefault.GameState;
 import managers.BorderManager;
 import managers.ControlMarkerManager;
 import managers.ProvinceManager;
-import managers.TokenInfluenceManager;
+import tokenInfluence.Ship;
 import tokenInfluence.TokenInfluence;
-import utils.ArrayList;
 import utils.Lock;
 
 public class JUnit extends GameState {
@@ -30,11 +28,8 @@ public class JUnit extends GameState {
 
 		for (Border border : BorderManager.INSTANCE.getList()) {
 
-			TokenInfluence tokenInfluence = TokenInfluenceManager.INSTANCE
-					.removeRandomTokenNormal(new ArrayList<EColor>(EColor.values()).getRandom());
-			tokenInfluence.getImageView().setVisible(true);
-
-			border.addTokenProvinceAnimateSynchronous(tokenInfluence);
+			if (border.getClassTokenInfluence().equals(Ship.class))
+				border.setSelected();
 
 		}
 

@@ -48,9 +48,26 @@ public class Border implements ISelectCoordinatesAble {
 
 	}
 
+	public Class<? extends TokenInfluence> getClassTokenInfluence() {
+		return this.classTokenInfluence;
+	}
+
 	@Override
 	public Vector2 getSelectCoordinatesCenter() {
 		return this.coordinatesCenter;
+	}
+
+	@Override
+	public double getSelectDimension() {
+		return Credentials.INSTANCE.dToken / 2;
+	}
+
+	public Class<? extends Province> getClassProvinceTop() {
+		return this.classProvinceTop;
+	}
+
+	public Class<? extends Province> getClassProvinceBottom() {
+		return this.classProvinceBottom;
 	}
 
 }

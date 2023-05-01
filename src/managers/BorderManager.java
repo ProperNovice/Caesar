@@ -13,6 +13,7 @@ import provinces.Gallia;
 import provinces.GalliaCisalpina;
 import provinces.HispaniaCiterior;
 import provinces.HispaniaUlterior;
+import provinces.Italia;
 import provinces.Macedonia;
 import provinces.Mauritania;
 import provinces.Numidia;
@@ -133,9 +134,33 @@ public enum BorderManager {
 		this.list.addLast(new BorderBuilder().classProvinces(Sardinia.class, Sicilia.class)
 				.classTokenInfluence(Ship.class).coordinatesCenter(524, 471).rotateOriginal(40)
 				.build());
-		
+
 		this.list.addLast(new BorderBuilder().classProvinces(Gallia.class, Sardinia.class)
 				.classTokenInfluence(Shield.class).coordinatesCenter(666, 372).rotateOriginal(50)
+				.build());
+
+		this.list.addLast(new BorderBuilder().classProvinces(Italia.class, Sardinia.class)
+				.classTokenInfluence(Shield.class).coordinatesCenter(641, 472).rotateOriginal(130)
+				.build());
+
+		this.list.addLast(new BorderBuilder().classProvinces(GalliaCisalpina.class, Italia.class)
+				.classTokenInfluence(Sword.class).coordinatesCenter(716, 516).rotateOriginal(80)
+				.build());
+
+		this.list.addLast(new BorderBuilder().classProvinces(Dalmatia.class, Italia.class)
+				.classTokenInfluence(Ship.class).coordinatesCenter(702, 618).rotateOriginal(130)
+				.build());
+
+		this.list.addLast(new BorderBuilder().classProvinces(Italia.class, Macedonia.class)
+				.classTokenInfluence(Shield.class).coordinatesCenter(584, 715).rotateOriginal(330)
+				.build());
+
+		this.list.addLast(new BorderBuilder().classProvinces(Italia.class, Achaia.class)
+				.classTokenInfluence(Ship.class).coordinatesCenter(480, 695).rotateOriginal(40)
+				.build());
+
+		this.list.addLast(new BorderBuilder().classProvinces(Italia.class, Sicilia.class)
+				.classTokenInfluence(Sword.class).coordinatesCenter(542, 565).rotateOriginal(140)
 				.build());
 
 	}
